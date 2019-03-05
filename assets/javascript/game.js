@@ -7,7 +7,6 @@ var randomNbr = 0;
 var totalScore = 0;
 var gemButtons = [0, 0, 0, 0];
 var buttonName = "";
-var gameRunning = false;
 
 //generate random number between 19 and 120 
 
@@ -19,7 +18,7 @@ function generate() {
     console.log("random number " + randomNbr);
     $('#randomNumber').html(randomNbr);
     $('#status').text("click the crystal buttons and match the random number");
-
+// generate and assign random numbers between 1 and 12 to all crystals
     for (var i = 0; i < gemButtons.length; i++) {
         var min = 1;
         var max = 12;
@@ -28,6 +27,7 @@ function generate() {
 
     }
 }
+// on click function to add up the button values 
 
 $(".btn").click(function () {
     buttonName = this.id;
