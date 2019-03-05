@@ -6,37 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Gem Collector Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 bg-light">
-                <div>random number: <span id="randomNumber"></span></div>
-                <div>total score: <span  id="totalScore"></span></div>
-                <div>wins: <span id="wins"></span></div>
-                <div>losses: <span id="losses"></span></div>
+
+
+    <div class="container rounded game">
+        <div id="container">
+            <div id="display-2">
+                <div id="jumbotron">
+                    <div class="display-4 text-center font-weight-bold">Crystal Collector Game
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>random number: <span id="randomNumber"></span></h3>
+                            <h3>total score: <span id="totalScore"></span></h3>
+                            <hr id="my-4">
+                            <h3>wins: <span id="wins"></span></h3>
+                            <h3>losses: <span id="losses"></span></h3>
+                        </div>
+                        <div class="col-md-8 text-center">
+                            <div id="row">
+                                <div id="col-md-4">
+                                    <img id="gem1" class="btn btn-outline-dark p-4 m-1" src="assets/images/gem1.png"
+                                        alt="gem 2">
+                                    <img id="gem2" class="btn btn-outline-dark p-4 m-1" src="assets/images/gem2.png"
+                                        alt="gem 2">
+                                </div>
+                                <div id="col-md-4">
+                                    <img id="gem3" class="btn btn-outline-dark p-4 m-1" src="assets/images/gem3.png"
+                                        alt="gem 3">
+                                    <img id="gem4" class="btn btn-outline-dark p-4 m-1" src="assets/images/gem4.png"
+                                        alt="gem 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-            <div class="col-md-8 bg-light ">
-
-                <img id="gem1" class="btn btn-outline-dark p-4" src="assets/images/gem1.png" alt="gem 2">
-                <img id="gem2" class="btn btn-outline-dark p-4" src="assets/images/gem2.png" alt="gem 2">
-                <img id="gem3" class="btn btn-outline-dark p-4" src="assets/images/gem3.png" alt="gem 3">
-                <img id="gem4" class="btn btn-outline-dark p-4" src="assets/images/gem4.png" alt="gem 4">
-            </div>
-
         </div>
-
-        <H3 id="statusMsg"></H3>
-        <br>
-        <br>
     </div>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="assets/javascript/game.js"></script>
