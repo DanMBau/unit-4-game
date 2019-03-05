@@ -17,7 +17,8 @@ function generate() {
     var max = 120;
     randomNbr = Math.floor(Math.random() * (max - min + 1)) + min;
     console.log("random number " + randomNbr);
-    $('#randomNumber').html(randomNbr)
+    $('#randomNumber').html(randomNbr);
+    $('#status').text("click the crystal buttons and match the random number");
 
     for (var i = 0; i < gemButtons.length; i++) {
         var min = 1;
@@ -34,19 +35,27 @@ $(".btn").click(function () {
 
     if (buttonName === "gem1") {
         totalScore = totalScore + gemButtons[0];
-        $("#totalScore").text(totalScore)
+        $("#totalScore").text(totalScore);
+        $('#status').text("keep on clicking :)");
+
     }
     if (buttonName === "gem2") {
         totalScore = totalScore + gemButtons[1];
-        $("#totalScore").text(totalScore)
+        $("#totalScore").text(totalScore);
+        $('#status').text("keep on clicking :)");
+
     }
     if (buttonName === "gem3") {
         totalScore = totalScore + gemButtons[2];
-        $("#totalScore").text(totalScore)
+        $("#totalScore").text(totalScore);
+        $('#status').text("keep on clicking :)");
+
     }
     if (buttonName === "gem4") {
         totalScore = totalScore + gemButtons[3];
-        $("#totalScore").text(totalScore)
+        $("#totalScore").text(totalScore);
+        $('#status').text("keep on clicking :)");
+
     }
     console.log("losses " + losses)
     if (totalScore > randomNbr) {
@@ -54,6 +63,7 @@ $(".btn").click(function () {
         $("#losses").text(losses);
         totalScore = 0;
         $("#totalScore").html(totalScore);
+
         generate();
     }
     else if (totalScore === randomNbr){
