@@ -10,9 +10,6 @@ var gemButtons = [0, 0, 0, 0];
 var buttonName = "";
 var gameRunning = false;
 
-//generate random number between 19 and 120 
-
-
 
 
 
@@ -23,8 +20,6 @@ function generateRandomNbr() {
     console.log("random number " + randomNbr);
     $('#randomNumber').html(randomNbr)
 }
-
-//generate random number for each gem button
 
 function generateButtons() {
     for (var i = 0; i < gemButtons.length; i++) {
@@ -97,66 +92,3 @@ resetScore();
 
 
 
-    // if (buttonName === "gem2") {
-    //     totalScore = totalScore + gemButtons[1];    
-    //     $("#totalScore").text(totalScore);
-    // };
-
-    // if (buttonName === "gem3") {
-    //     totalScore = totalScore + gemButtons[2];    
-    //     $("#totalScore").text(totalScore);
-    // };
-
-    // if (buttonName === "gem4") {
-    //     totalScore = totalScore + gemButtons[3];    
-    //     $("#totalScore").text(totalScore);
-    // };
-
-    //define loss
-
-
-
-
-
-// $("gem1").click(function () {
-    //     buttonName = "gem1";
-    //     console.log("button " + buttonName)
-
-
-
-
-
-
-    // if (totalScore > randomNbr) {
-    //     losses++;
-    //     $("#losses").text(parseInt(losses));
-    //     generateRandomNbr();
-    //     generateButtons();
-    //     resetScore();
-    //     console.log("losses " + losses)
-    // }
-
-    // else if (totalScore === randomNbr) {
-    //     losses++;
-    //     $("#wins").text(parseInt(wins));
-    //     generateRandomNbr();
-    //     generateButtons();
-    //     resetScore();
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//closing bracket startup function
